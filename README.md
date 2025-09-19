@@ -26,7 +26,7 @@ Herramientas de K8s: kubectl y hey (para pruebas de estrés).
 
 ```
 git clone https://github.com/KeepCodingCloudDevops12/miguel_narvaiz-K8s.git
-cd <NOMBRE_DEL_REPOSITORIO>/guestbook-app
+cd  <directorio donde esta el repositotio>/miguel_narvaiz-K8s/guestbook-app
 ```
 
 **Paso 2: Preparar la Imagen Docker (Local)**
@@ -44,8 +44,10 @@ eval $(minikube docker-env)
 
 Construye la imagen usando la etiqueta definida en tu values.yaml (ej. myapp/guestbook-app:latest). Asegúrate de tener un Dockerfile en el directorio actual.
 ```
-# Reemplaza 'myapp/guestbook-app:v1.0' con la ruta exacta de tu values.yaml
-docker build -t <REPOSITORIO>/guestbook-app:v1.0 .
+**IMPORTANTE:** Usa el nombre y etiqueta que el Deployment requiere (`guestbook-app:latest`).
+# Asegúrate de estar en el directorio donde está tu Dockerfile (ej. guestbook-app/app)
+    docker build -t guestbook-app:latest .
+cd ..
 ```
 
 2.3 Desconectar el shell de Docker de Minikube:
