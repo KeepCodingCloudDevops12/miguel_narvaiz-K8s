@@ -28,6 +28,8 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 # 5. Agregar el usuario actual al grupo docker (requiere reiniciar sesión)
 sudo usermod -aG docker $USER
 ```
+***Es posible que se necesite reiniciar la sesion para que tome los cambios***
+
 1.2 Instalar kubectl (Herramienta de Control de K8s)
 kubectl es el cliente para interactuar con el clúster.
 
