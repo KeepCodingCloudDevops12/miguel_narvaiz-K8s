@@ -22,7 +22,7 @@ spec:
       containers:
         - name: app
           image: "{{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}"
-          imagePullPolicy: {{ .Values.app.image.pullPolicy }}
+          imagePullPolicy: IfNotPresent  
           ports:
             # Este es el puerto interno del contenedor donde corre la app (ej. 3000)
             - containerPort: 3000
