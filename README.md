@@ -89,7 +89,7 @@ watch kubectl get pods
 ```
 ***NOTA: Espera hasta ver los Pods de la aplicación (guestbook-app-$$$) en estado 1/1 Running.***
 
-***Pueden aparecer en error los conenedores de app mientras el de db se levanta***
+***Pueden aparecer en error los contenedores de app mientras el de db se levanta***
 
 
 
@@ -121,7 +121,7 @@ Esta prueba demuestra que tu HPA está configurado correctamente para soportar a
 Ejecuta el siguiente comando para saturar la CPU de los Pods (debe instalar la herramienta hey si no la tiene).
 
 ```
-hey -n 90000 -c 500 http://guestbook.local/?email=goku@capsulecorp.com
+hey -n 90000 -c 700 http://guestbook.local/?email=goku@capsulecorp.com
 ```
 ***se puede editar el mail para capturar visitas de diferentes correos y puedes correr este comando las veces que necesites***
 
