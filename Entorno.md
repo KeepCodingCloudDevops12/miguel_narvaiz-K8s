@@ -48,8 +48,6 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 # 2. Instalar Minikube
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
 
-# 3. Iniciar el clúster (con los addons requeridos)
-minikube start --addons=ingress,metrics-server
 ```
 
 ## 2. Instalación de Herramientas de Despliegue y Prueba
@@ -77,14 +75,8 @@ hey es la herramienta recomendada para simular el tráfico alto y probar la func
 sudo apt install golang-go -y
 
 # 2. Instalar la herramienta 'hey'
-go install github.com/rakyll/hey@latest
 sudo apt  install hey
 
-# Nota: El binario 'hey' se instala generalmente en ~/go/bin. 
-# Si el comando 'hey' no funciona, asegúrate de que ~/go/bin esté en tu PATH.
-# Para añadirlo permanentemente:
-echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.bashrc
-source ~/.bashrc
 ```
 
 ## 3. Verificación de Instalación
