@@ -136,7 +136,7 @@ watch kubectl get hpa,pods
 ***Verás que la columna TARGETS subirá por encima del 50%, y la columna REPLICAS aumentará de 2 a 3, 4 o 5.***
 
 
-Abrir un navegador y poner la url parra ver los datos capturados 
+Abrir un navegador y poner la url para ver los datos capturados 
 
 ```
 http://guestbook.local/
