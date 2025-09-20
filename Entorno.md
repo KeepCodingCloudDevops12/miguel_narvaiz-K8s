@@ -1,7 +1,7 @@
 # 🛠️ Manual de Instalación de Requisitos Previos (Guestbook Helm Chart)
 Este documento guía la instalación y configuración de todas las herramientas esenciales (Git, Docker, Minikube, Helm, hey) necesarias para desplegar y probar el Chart de Helm del Guestbook en un entorno local de Kubernetes.
 
-## 1. Instalación del Clúster de Kubernetes: Minikube
+## 1. Instalación de Docker y del Clúster de Kubernetes: Minikube
 Minikube es la herramienta recomendada para ejecutar un clúster de Kubernetes en un entorno local (una VM con Docker/Podman).
 
 1.1 Instalar Docker (Motor de Contenedores)
